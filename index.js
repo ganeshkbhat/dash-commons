@@ -41,8 +41,10 @@ function merge(l, u, mergeall = false) {
     } else {
       u["_" + lk[i]] = u[lk[i]];
     }
-    return { ...u, ...l }
   }
+  u["_" + "chain"] = u["chain"];
+  u["_" + "value"] = u["value"];
+  return { ...u, ...l }
 }
 
 var _ = merge(_l, _u);
