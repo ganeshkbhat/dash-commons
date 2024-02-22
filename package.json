@@ -21,6 +21,7 @@
     "silent": true
   },
   "scripts": {
+    "emit": "npx tsc",
     "test": "mocha --reporter spec --recursive --timeout 60000"
   },
   "dependencies": {
