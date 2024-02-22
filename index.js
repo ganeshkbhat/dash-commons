@@ -27,8 +27,9 @@ if (isBrowser()) {
   var _u = require('underscore');
   var _l = require("lodash");
 } else {
-  var _u = await fetch('https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js');
-  var _l = await fetch("https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js");
+  var _u, _l;
+  fetch('https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js').then((u) => { _u = u; });
+  fetch("https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js").then((l) => { _l = l; });
 }
 
 function merge(l, u, mergeall = true) {

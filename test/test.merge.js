@@ -16,9 +16,13 @@
 
 // console.log(JSON.stringify(Object.keys(merge(require("lodash"), require("underscore")))))
 
+
 const fs = require("fs");
 // const { describe, before, after } = require("mocha");
 const { expect } = require("chai");
+const _l = require("lodash");
+const _u = require("underscore");
+const merge = require("../index");
 
 describe('[Parser tests] ', () => {
 
@@ -31,12 +35,18 @@ describe('[Parser tests] ', () => {
   });
 
   it('should ', () => {
+    let _lu = merge(_l, _u);
+    let _luk = Object.keys(_lu);
+
     const expected = 0; // predefined
     const actual = 0; // do ops
     expect(actual).to.deep.equal(expected);
   });
 
   it('should ', () => {
+    let _ = merge(require("lodash"), require("underscore"));
+    let _k = Object.keys(_k);
+
     const expected = 0; // predefined
     const actual = 0; // do ops
     expect(actual).to.deep.equal(expected);
