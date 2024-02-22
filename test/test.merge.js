@@ -28,19 +28,17 @@ const merge = require("../index");
 describe('[Parser tests] ', () => {
 
   before(() => {
-    // fs.writeFileSync('.env', envFile);
   });
 
   after(() => {
-    // fs.unlinkSync('.env');
   });
 
   it('should ', () => {
     let _lu = merge(_l, _u);
     let _luk = Object.keys(_lu);
 
-    const expected = 0; // predefined
-    const actual = 0; // do ops
+    const expected = 0; 
+    const actual = 0; 
     expect(actual).to.deep.equal(expected);
   });
 
@@ -48,8 +46,8 @@ describe('[Parser tests] ', () => {
     let _ = merge(require("lodash"), require("underscore"));
     let _k = Object.keys(_k);
 
-    const expected = 0; // predefined
-    const actual = 0; // do ops
+    const expected = 0; 
+    const actual = 0; 
     expect(actual).to.deep.equal(expected);
   });
 
