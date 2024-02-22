@@ -15,6 +15,11 @@
 
 'use strict';
 
+/**
+ * isBrowser
+ *
+ * @return {*} 
+ */
 function isBrowser() {
   if (typeof process === "object" && typeof require === "function") {
     return false;
