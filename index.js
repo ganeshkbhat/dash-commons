@@ -31,7 +31,7 @@ if (isBrowser()) {
   var _l = await fetch("https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js");
 }
 
-function merge(l, u, mergeall = false) {
+function merge(l, u, mergeall = true) {
   let lk = Object.keys(l), uk = Object.keys(u);
   for (let i = 0; i < lk.length; i++) {
     if (!mergeall) {
