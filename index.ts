@@ -14,3 +14,9 @@
 /* eslint no-console: 0 */
 
 'use strict';
+
+
+import * as dashcommons from "./index.js";
+
+export const _commons = dashcommons;
+export default _commons;
