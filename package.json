@@ -1,0 +1,31 @@
+{
+  "name": "lodash-underscore",
+  "version": "1.0.0",
+  "description": "use the package as a combined package of lodash-underscore in one object",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "underscore": "^1.13.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "chai": "^4.4.1",
+    "clean-pkg-json": "^1.2.0",
+    "esbuild": "^0.20.0",
+    "mocha": "^10.2.0",
+    "pre-commit": "^1.2.2",
+    "pre-push": "^0.1.4",
+    "sinon": "^17.0.1",
+    "typescript": "^5.3.3",
+    "unimported": "^1.31.1"
+  }
+}
