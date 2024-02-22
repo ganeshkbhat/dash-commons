@@ -3,15 +3,27 @@
   "version": "1.0.0",
   "description": "use the package as a combined package of lodash-underscore in one object",
   "main": "index.js",
+  "exports": {
+    ".": {
+      "require": "./index.js",
+      "import": "./index.mjs"
+    }
+  },
   "directories": {
     "test": "test"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "pre-commit": {
+    "run": [
+      "test"
+    ]
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "pre-push": {
+    "run": [],
+    "silent": true
+  },
+  "scripts": {
+    "test": "mocha --reporter spec --recursive --timeout 60000"
+  },
   "dependencies": {
     "lodash": "^4.17.21",
     "underscore": "^1.13.6"
@@ -27,5 +39,15 @@
     "sinon": "^17.0.1",
     "typescript": "^5.3.3",
     "unimported": "^1.31.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganeshkbhat/lodash-underscore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ganeshkbhat/lodash-underscore/issues"
+  },
+  "homepage": "https://github.com/ganeshkbhat/lodash-underscore#readme",
+  "author": "Ganesh Bhat <ganeshsurfs@gmail.com>",
+  "license": "MIT"
 }
