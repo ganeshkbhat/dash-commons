@@ -18,5 +18,5 @@
 
 import * as dashcommons from "./index.js";
 
-export const _commons = dashcommons;
-export default _commons;
+export const commons_ = dashcommons;
+export default commons_;
