@@ -1,9 +1,9 @@
 /**
  * 
- * Package: 
+ * Package: commons_
  * Author: Ganesh B
- * Description: Package
- * Install: npm i lodash-underscore --save
+ * Description: Package that combines lodsh and underscore packages in one package
+ * Install: npm i commons_ --save
  * Github: https://github.com/ganeshkbhat/lodash-underscore
  * npmjs Link: https://www.npmjs.com/package/lodash-underscore
  * File: index.js
@@ -14,7 +14,6 @@
 /* eslint no-console: 0 */
 
 'use strict';
-
 
 import * as dashcommons from "./index.js";
 

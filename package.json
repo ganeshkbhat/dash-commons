@@ -1,7 +1,7 @@
 {
   "name": "commons_",
   "version": "1.0.0",
-  "description": "use the commons_ package as a combined package of lodash-underscore in one object",
+  "description": "package that combines lodash and underscore packages in one comprehensive package",
   "main": "index.js",
   "exports": {
     ".": {
