@@ -1,7 +1,7 @@
 {
-  "name": "lodash-underscore",
+  "name": "dash-commons",
   "version": "1.0.0",
-  "description": "use the package as a combined package of lodash-underscore in one object",
+  "description": "use the dash-commons package as a combined package of lodash-underscore in one object",
   "main": "index.js",
   "exports": {
     ".": {
